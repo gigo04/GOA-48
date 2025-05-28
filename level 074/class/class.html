@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boxes Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      border: 1px solid black;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="box" id="box1"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <script>
+    const boxClass = document.getElementsByClassName('box');
+    console.log('getElementsByClassName:', boxClass[0]); 
+
+    const boxById = document.getElementById('box1');
+    console.log('getElementById:', boxById);
+  </script>
+
+</body>
+</html>
