@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+class Human {
+  constructor(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+  }
+}
+
+const newHuman = new Human("giorgi", "tatishvili", "44");
+console.log(newHuman);
+
+
+
+class User {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(value) {
+    this._name = value;
+  }
+}
+
+const u = new User("Nika");
+console.log(u.name); 
+u.name = "Luka";      
+console.log(u.name);  
+
+
+class Test {
+  set message(value) {
+    console.log("მივიღე:", value);
+  }
+}
+
+const t = new Test();
+t.message = "გამარჯობა!";
+
+
+  </script>
+</body>
+
+</html>

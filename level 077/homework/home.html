@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        let arr = [10, 20, 33, 44, 55]
+        let sliced = arr.slice(1, 3);
+        console.log("Sliced:", sliced);
+        console.log("Original arr after slice:", arr);
+        let spliced = arr.spliced(2, 3);
+        console.log("spliced:", spliced);
+        console.log(arr)
+
+        //2
+        let arr2 = [10, 20, 30, 40, 50, 60];
+
+        arr2.splice(2, 2, 'a', 'b', 'c');
+        console.log("Modified array:", arr2);
+
+        let lastTwo = arr2.slice(-2);
+        console.log("Last two elements:", lastTwo);
+
+
+        //3
+        let arr3 = ['a', 'b', 'c', 'd', 'e'];
+
+
+        let removed3 = arr3.splice(1, 2);
+        console.log("Removed:", removed3);
+
+        let sliced3 = removed3.slice(1);
+        console.log("Sliced from removed:", sliced3);
+
+        sliced3.splice(1, 0, 'x', 'y');
+        console.log("Modified sliced:", sliced3);
+
+
+        // 4
+        let arr4 = [10, 20 ,30, 40, 50, 60];
+        arr4.ssplice(1,2, 25, 27)
+
+        let sliced4 = arr4.slice(3)
+        console.log(sliced4)
+
+
+
+
+    </script>
+</body>
+
+</html>
